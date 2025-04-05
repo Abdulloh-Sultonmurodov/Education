@@ -29,6 +29,27 @@
             left: 250px;
         }
 
+        @media (max-width: 831px) {
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+             
+            .hero__img-wrapper {
+                position: absolute;
+                top: 50px;
+            }
+            .hero__text-wrapper {
+                position: absolute;
+                top: 900px;
+                left: 50px;
+            }
+            .hero__btns-wrapper {
+                position: absolute;
+                top: 1200px;
+                left: 100px;
+            }
+
     }
 
     &__content-wrapper {
@@ -84,3 +105,4 @@
 }
 
 
+}

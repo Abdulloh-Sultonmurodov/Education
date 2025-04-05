@@ -214,102 +214,121 @@ body {
     left: 250px;
   }
 }
-.hero__content-wrapper {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  gap: 50px;
-  flex-direction: column;
-  max-width: 568px;
+@media (max-width: 1115px) and (max-width: 831px) {
+  .hero {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero .hero__img-wrapper {
+    position: absolute;
+    top: 50px;
+  }
+  .hero .hero__text-wrapper {
+    position: absolute;
+    top: 900px;
+    left: 50px;
+  }
+  .hero .hero__btns-wrapper {
+    position: absolute;
+    top: 1200px;
+    left: 100px;
+  }
 }
-.hero__text-clr {
-  color: #5855E7;
-}
-
-.hero__content-wrapper h2 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #000000;
-  transition: all 0.3s;
-  margin-bottom: 40px;
-}
-.hero__content-wrapper p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #000000;
-  transition: all 0.3s;
-}
-.hero__btns-wrapper {
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  gap: 40px;
-}
-.hero__btn-call {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #000000;
-  transition: all 0.3s;
-  padding: 11px 35px;
-  border-radius: 10px;
-  background-color: #ffffff;
-  border: 3px solid #5855E7;
-}
-
-.hero__btn-call:hover {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #ffffff;
-  transition: all 0.3s;
-  padding: 11px 35px;
-  border-radius: 10px;
-  background-color: #5855E7;
-  border: 3px solid #5855E7;
-  cursor: pointer;
-}
-
-.hero__btn-about {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #000000;
-  transition: all 0.3s;
-  padding: 11px 35px;
-  border-radius: 10px;
-  background-color: #ffffff;
-  border: 3px solid #5855E7;
-}
-
-.hero__btn-about:hover {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #ffffff;
-  transition: all 0.3s;
-  padding: 11px 35px;
-  border-radius: 10px;
-  background-color: #5855E7;
-  border: 3px solid #5855E7;
-  cursor: pointer;
-}
-
-.hero__img-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-.hero__img-circle {
-  position: absolute;
-  left: 70px;
-  top: 220px;
-  z-index: -1;
+@media (max-width: 1115px) {
+  .hero__content-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: column;
+    max-width: 568px;
+  }
+  .hero__text-clr {
+    color: #5855E7;
+  }
+  .hero__content-wrapper h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    transition: all 0.3s;
+    margin-bottom: 40px;
+  }
+  .hero__content-wrapper p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    transition: all 0.3s;
+  }
+  .hero__btns-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 40px;
+  }
+  .hero__btn-call {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    transition: all 0.3s;
+    padding: 11px 35px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 3px solid #5855E7;
+  }
+  .hero__btn-call:hover {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ffffff;
+    transition: all 0.3s;
+    padding: 11px 35px;
+    border-radius: 10px;
+    background-color: #5855E7;
+    border: 3px solid #5855E7;
+    cursor: pointer;
+  }
+  .hero__btn-about {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    transition: all 0.3s;
+    padding: 11px 35px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 3px solid #5855E7;
+  }
+  .hero__btn-about:hover {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ffffff;
+    transition: all 0.3s;
+    padding: 11px 35px;
+    border-radius: 10px;
+    background-color: #5855E7;
+    border: 3px solid #5855E7;
+    cursor: pointer;
+  }
+  .hero__img-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  .hero__img-circle {
+    position: absolute;
+    left: 70px;
+    top: 220px;
+    z-index: -1;
+  }
 }/*# sourceMappingURL=main.css.map */
