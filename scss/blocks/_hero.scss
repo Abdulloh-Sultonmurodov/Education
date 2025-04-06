@@ -1,108 +1,88 @@
 .hero-section {
-    height: 642px;
+  height: 642px;
 }
 
 .hero {
-    $hero: &;
-    display: flex;
-    justify-content: space-around;
-    margin: 0 130px;
+  $hero: &;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 130px;
 
-    @media (max-width: 1115px) {
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-         
-        .hero__img-wrapper {
-            position: absolute;
-            top: 100px;
-        }
-        .hero__text-wrapper {
-            position: absolute;
-            top: 900px;
-            left: 100px;
-        }
-        .hero__btns-wrapper {
-            position: absolute;
-            top: 1200px;
-            left: 250px;
-        }
+  &__content-wrapper {
+    @include Display($ITEMS: start, $SPACE: center, $GAP: 50px);
+    flex-direction: column;
+    max-width: 568px;
 
-        @media (max-width: 831px) {
-            position: relative;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-             
-            .hero__img-wrapper {
-                position: absolute;
-                top: 50px;
-            }
-            .hero__text-wrapper {
-                position: absolute;
-                top: 900px;
-                left: 50px;
-            }
-            .hero__btns-wrapper {
-                position: absolute;
-                top: 1200px;
-                left: 100px;
-            }
-
+    @at-root #{$hero}__text-clr {
+      color: $color-blue;
     }
 
-    &__content-wrapper {
-        @include Display ($ITEMS:start, $SPACE:center, $GAP:50px);
-        flex-direction: column;
-        max-width: 568px;    
-        
-            @at-root #{$hero}__text-clr {
-                color: $color-blue;
-            }
-        
-        h2 {
-            @include TextStyle($FW:700, $FS:40px, $LH:100%, $LS:0%, $CLR:$color-black);
-            margin-bottom: 40px;
-        }
-        p {
-            @include TextStyle($FW:400, $FS:18px, $LH:100%, $LS:0%, $CLR:$color-black);
-        }
-
-        @at-root #{$hero}__btns-wrapper {
-            @include Display ($ITEMS:start, $SPACE:start, $GAP:40px);
-            
-            
-            @at-root #{$hero}__btn-call {
-                @include ButtonStyle ($btnClr:$color-black, $btnBg:$color-white, $btnBorderClr:$color-blue);
-            }
-            @at-root #{$hero}__btn-call:hover {
-                @include ButtonStyle ($btnClr:$color-white, $btnBg:$color-blue, $btnBorderClr:$color-blue);
-                cursor: pointer;
-            }
-        
-            @at-root #{$hero}__btn-about {
-                @include ButtonStyle ($btnClr:$color-black, $btnBg:$color-white, $btnBorderClr:$color-blue);
-            }
-            @at-root #{$hero}__btn-about:hover {
-                @include ButtonStyle ($btnClr:$color-white, $btnBg:$color-blue, $btnBorderClr:$color-blue);
-                cursor: pointer;
-            }
-        }
+    h2 {
+      @include TextStyle(
+        $FW: 700,
+        $FS: 40px,
+        $LH: 100%,
+        $LS: 0%,
+        $CLR: $color-black
+      );
+      margin-bottom: 40px;
+    }
+    p {
+      @include TextStyle(
+        $FW: 400,
+        $FS: 18px,
+        $LH: 100%,
+        $LS: 0%,
+        $CLR: $color-black
+      );
     }
 
-    &__img-wrapper {
-        position: relative;
-        overflow: hidden;
-        
-        @at-root #{$hero}__img-circle {
-          position: absolute;
-          left: 70px;
-          top: 220px;
-          z-index: -1;
-        }
+    @at-root #{$hero}__btns-wrapper {
+      @include Display($ITEMS: start, $SPACE: start, $GAP: 40px);
+
+      @at-root #{$hero}__btn-call {
+        @include ButtonStyle(
+          $btnClr: $color-black,
+          $btnBg: $color-white,
+          $btnBorderClr: $color-blue
+        );
+      }
+      @at-root #{$hero}__btn-call:hover {
+        @include ButtonStyle(
+          $btnClr: $color-white,
+          $btnBg: $color-blue,
+          $btnBorderClr: $color-blue
+        );
+        cursor: pointer;
+      }
+
+      @at-root #{$hero}__btn-about {
+        @include ButtonStyle(
+          $btnClr: $color-black,
+          $btnBg: $color-white,
+          $btnBorderClr: $color-blue
+        );
+      }
+      @at-root #{$hero}__btn-about:hover {
+        @include ButtonStyle(
+          $btnClr: $color-white,
+          $btnBg: $color-blue,
+          $btnBorderClr: $color-blue
+        );
+        cursor: pointer;
+      }
     }
-}
+  }
 
+  &__img-wrapper {
+    position: relative;
+    overflow: hidden;
 
+    @at-root #{$hero}__img-circle {
+      position: absolute;
+      left: 70px;
+      top: 220px;
+      z-index: -1;
+    }
+  }
 }
