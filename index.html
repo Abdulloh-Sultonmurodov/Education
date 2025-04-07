@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" href="./images/Education-Logo.svg">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+    </style>
     <title>Обучения</title>
 </head>
 
@@ -49,27 +67,30 @@
         </div>
     </header>
     <main>
-        <section class="hero-section">
-            <div class="hero">
-                <div class="hero__content-wrapper">
-                    <div class="hero__text-wrapper">
-                        <h2><span class="hero__text-clr">The Best Future Stars</span> - мы заботимся о будущем вашего ребенка</h2>
-                        <p>Наши опытные преподователи сделают процесс обучения максимально интересным и эффективным для вашего ребенка </p>
+        <section class="!pt-[180px] overflow-hidden relative !pb-[142px] bg-[fafafa]">
+            <div class="containers">
+                <div class="max-w-[568px] flex flex-col gap-10">
+                    <h2 class="font-bold text-[40px] leading-[100%] text-[#000]"><span class="text-[#5855E7]">The Best
+                            Future Stars</span> - мы заботимся о будущем вашего ребенка</h2>
+                    <p class="font-normal text-[18px] leading-[100%] text-[#0000000]">Наши опытные преподователи сделают
+                        процесс обучения максимально интересным и эффективным для вашего ребенка </p>
+                    <div class="flex items-center justify-between">
+                        <a class="!w-[47%] font-medium text-[36px] border-[3px] border-transparent leading-[100%] text-white py-[7px] text-center bg-[#6347EB] rounded-[10px] hover:bg-[white] hover:border-[#6347EB] hover:text-[#6347EB] transition delay-300"
+                            href="#">Позвонить</a>
+                        <button
+                            class="!w-[47%] font-medium text-[36px] border-[3px] border-transparent leading-[100%] text-white py-[7px] text-center bg-[#6347EB] rounded-[10px] hover:bg-[white] hover:border-[#6347EB] hover:text-[#6347EB] transition delay-300">Подробнее</button>
                     </div>
-                    <div class="hero__btns-wrapper">
-                        <button class="hero__btn-call">Позвонить</button>
-                        <button class="hero__btn-about">Подробнее</button>
-                    </div>
-                </div>
-                <div class="hero__img-wrapper">
-                    <img src="./images/LIttle-boy.svg" alt="LIttle boy image" width="680" height="648">
-                    <img class="hero__img-circle" src="./images/circle-img.png" alt="circle Image" width="645" height="645">
                 </div>
             </div>
+            <img class="absolute right-0 top-0" src="./images/Little-boy-education.png" alt="Little boy education">
         </section>
     </main>
-    
+
     <script src="./js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
 </body>
 
 </html>
